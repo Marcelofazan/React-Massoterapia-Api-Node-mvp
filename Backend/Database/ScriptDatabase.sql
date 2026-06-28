@@ -11,7 +11,7 @@ sessao_id  SERIAL PRIMARY KEY,
 paciente_id INT NOT NULL,
 data TIMESTAMP NOT NULL,
 observacao VARCHAR NOT NULL,
-valor NUMERIC NOT NULL,
+valor NUMERIC(10,2) NOT NULL,
 in_pago BOOLEAN NOT NULL,
 CONSTRAINT fk_pacientes FOREIGN KEY (paciente_id) REFERENCES pacientes (paciente_id)
 );
