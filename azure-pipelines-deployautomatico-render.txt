@@ -78,7 +78,7 @@ steps:
 # Lembre-se de cadastrar RENDER_BACKEND_HOOK e RENDER_FRONTEND_HOOK nas "Variables" do Azure DevOps
 - script: |
     echo "Disparando deploy do Backend..."
-    curl -X POST "https://api.render.com/deploy/srv-..."
+    curl -X POST "https://api.render.com/deploy/srv-.........................."
   displayName: 'Render: Deploy Backend'
   condition: succeeded()
   env:
@@ -86,7 +86,7 @@ steps:
 
 - script: |
     echo "Disparando deploy do Frontend..."
-    curl -X POST "https://api.render.com/deploy/srv-..."
+    curl -X POST "https://api.render.com/deploy/srv-.........................."
   displayName: 'Render: Deploy Frontend'
   condition: succeeded()
   env:
